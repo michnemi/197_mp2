@@ -50,7 +50,7 @@ if __name__ == '__main__':
     print('Total Number of Region Proposals: {}'.format(len(rects)))
     
     # number of region proposals to show
-    numShowRects = 100
+    numShowRects = 5
     # increment to increase/decrease total number
     # of reason proposals to be shown
     increment = 50
@@ -64,7 +64,7 @@ if __name__ == '__main__':
             # draw rectangle for region proposal till numShowRects
             if (i < numShowRects):
                 x, y, w, h = rect
-                cv2.rectangle(imOut, (x, y), (x+w, y+h), (0, 255, 0), 1, cv2.LINE_AA)
+                cv2.rectangle(imOut, (x, y), (x+w, y+h), (255, 0, 225), 1, cv2.LINE_AA)
             else:
                 break
 
